@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="col-lg-8 mt-7">
-                    <h6> Hey there, my name is Rajesh Anuragi. I have done my schooling from <a href="https://www.nios.ac.in/online-course-material/sr-secondary-courses/english-(302).aspx">NIOS</a>(National Institute of open Schooling) and one and half years of Computer Programming Course from <a href="https://www.navgurukul.org/">Navgurukul</a>. There I learnt and practiced various Fronted and Backend technologies like HTML, CSS, JavaScript, TypeScript, React, Node js, Express Js, and Python, DataBases: like MYSQL, PostgreSQL, and their respective ORMS, like Prisma, Sequlize. Below in the projects section are some projects I have worked on. Please do check them.
+                    <h6> Hey there, my name is Rajesh Anuragi. I have done my schooling from <a href="https://www.nios.ac.in/online-course-material/sr-secondary-courses/english-(302).aspx">NIOS</a>(National Institute of open Schooling) and one and half years of Computer Programming Course from <a href="https://www.navgurukul.org/">Navgurukul</a>. There I learnt and practiced various Frontend and Backend technologies like HTML, CSS, JavaScript, TypeScript, React, Node js, Express Js, and Python, DataBases: like MYSQL, PostgreSQL, and their respective ORMS, like Prisma, Sequlize. Below in the projects section are some projects I have worked on. Please do check them.
                     </h6>
                   
                     <div class="row mt-3">
@@ -194,18 +194,21 @@
             </div>
 
             <div class="col-lg-6">
-                <!-- form fields -->
-                <form  method="get" id="form1">
-                    <input type="text" class="form-control form-control-lg" placeholder="Name">
-                    <input type="email" class="form-control mt-3" placeholder="Email">
-                    <input type="text" class="form-control mt-3" placeholder="Subject">
-                    <div class="mb-3 mt-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                    </div>
-                </form>
-                <button form="form1" value="submit" type="submit" class="btn btn-success mt-3">Contact Me</button>
-                
-            </div>
+                <form action="mailto:rajeshanuragi2003@gmail.com"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        id="form1"
+                        name="EmailForm">
+                            Name:<br>
+                            <input type="text" class="form-control form-control-lg" placeholder="Name" name="Contact-Name"><br><br>
+                            Email:<br>
+                            <input class="form-control mt-3" placeholder="Email" name="Contact-Email"><br><br> 
+                            Message:<br> 
+                            <input type="text" name="Contact-Message"  class="form-control mt-3" placeholder="Subject">
+                           <br><br> 
+                            <button  class="btn btn-success mt-3" type="submit" value="Submit" >Send</button>
+                        </form>  
+                                    </div>
 
         </div>
     </div>
